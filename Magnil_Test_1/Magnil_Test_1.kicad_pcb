@@ -485,7 +485,7 @@
 		(at 125.710914 94)
 		(descr "Comfortable Electronic CR2450 battery holder, http://www.comf.com.tw/ProductDetail.asp?no=148")
 		(tags "Comfortable Electronic CR2450")
-		(property "Reference" "BT1"
+		(property "Reference" "BT01"
 			(at 0.1 -6.62 0)
 			(layer "F.SilkS")
 			(uuid "157120a9-7c35-4181-968f-3969f06986e8")
