@@ -1577,12 +1577,6 @@
 		)
 	)
 	(junction
-		(at 55.88 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54938347-433b-4f5b-8cc3-1f8ec680da63")
-	)
-	(junction
 		(at 165.1 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1593,6 +1587,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d52a8512-d84b-4feb-a1f3-b22f4be37574")
+	)
+	(junction
+		(at 55.88 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e56cedbf-dabb-4f51-9331-b94446a7010a")
 	)
 	(junction
 		(at 53.34 88.9)
@@ -1618,13 +1618,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 71.12) (xy 138.43 74.93)
+			(xy 55.88 63.5) (xy 55.88 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2817b134-9f29-4784-af3e-058c4d53c881")
+		(uuid "11f342b4-7057-4042-b7d0-7a69fc5dd011")
 	)
 	(wire
 		(pts
@@ -1645,6 +1645,16 @@
 			(type default)
 		)
 		(uuid "30451565-61df-4ab0-84b2-0227687ad428")
+	)
+	(wire
+		(pts
+			(xy 55.88 71.12) (xy 55.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31a081af-159e-40c0-82c8-d094f51d1796")
 	)
 	(wire
 		(pts
@@ -1688,7 +1698,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 62.23) (xy 55.88 64.77)
+			(xy 55.88 62.23) (xy 55.88 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1705,16 +1715,6 @@
 			(type default)
 		)
 		(uuid "66ec0a5b-b0fc-45c3-b9a6-d2f856f65135")
-	)
-	(wire
-		(pts
-			(xy 55.88 64.77) (xy 55.88 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a9b1028-c262-46d0-9d48-52d75a322ca1")
 	)
 	(wire
 		(pts
@@ -1845,6 +1845,16 @@
 			(type default)
 		)
 		(uuid "f2f04cac-8701-4fc7-a143-5549d854b070")
+	)
+	(wire
+		(pts
+			(xy 138.43 71.12) (xy 138.43 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a9548b-b603-49f2-8990-21f68da3b797")
 	)
 	(image
 		(at 247.65 173.99)
@@ -2979,6 +2989,78 @@
 		)
 		(uuid "d0c57d88-3819-4f7d-8d7c-0a9575cb7721")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 138.43 74.93 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f527f45-910a-4267-9cdd-008f27016242")
+		(property "Netclass" "Signals"
+			(at 140.97 74.2315 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.54)
+		(shape dot)
+		(at 55.88 71.12 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4359df77-f1ce-45fa-af67-260d8f74e268")
+		(property "Netclass" "Power"
+			(at 57.42 70.4215 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 0.05)
+		(shape dot)
+		(at 53.34 86.36 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "636081d5-37ce-4c0b-9647-b8326f66e117")
+		(property "Netclass" "Power"
+			(at 53.39 85.6615 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 53.34 90.17 0)
@@ -3270,7 +3352,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 55.88 71.12 0)
+		(at 55.88 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3279,7 +3361,7 @@
 		(fields_autoplaced yes)
 		(uuid "34b3eb2a-a02a-47a4-938e-684b9b79a09b")
 		(property "Reference" "BT1"
-			(at 59.69 68.0084 0)
+			(at 59.69 65.4684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3288,7 +3370,7 @@
 			)
 		)
 		(property "Value" "3.3 V Bat"
-			(at 59.69 70.5484 0)
+			(at 59.69 68.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3379,7 @@
 			)
 		)
 		(property "Footprint" "Battery:BatteryHolder_ComfortableElectronic_CH273-2450_1x2450"
-			(at 55.88 69.596 90)
+			(at 55.88 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +3388,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 69.596 90)
+			(at 55.88 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,7 +3397,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 55.88 71.12 0)
+			(at 55.88 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
